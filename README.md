@@ -1,9 +1,9 @@
-# MobileWebReader
+﻿# MobileWebReader
 A mobile web reader which uses html, jq, css
 
 
 #项目演示地址（请在开发者模式中，使用移动端的模式查看）
-http://htmlpreview.github.io/?https://github.com/yulifromchina/MobileWebReader/blob/master/%E9%98%85%E8%AF%BB%E5%99%A8/index.html
+https://github.com/wanghaijuan/MobileWebReader/blob/master/index.html
 
 #阅读器1.0：
 1. 实现翻页功能
