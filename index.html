@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="root">
+			<!-- 响应触摸屏幕，唤出上下边栏的结构 -->
+			<div class="m-artical-action">
+				<div class="artical-action-mid" id="action_mid"></div>
+			</div>
+
+			<!-- 上边栏 -->
+			<div id="nav_bar" class="nav-bar" style="display:none">
+				<div class="icon-back"></div>
+				<div class="nav-title">返回书架</div>
+			</div>
+
+			<!-- 下边栏 -->
+			<div id="foot-bar" class="foot-bar  foot-nav" style="display:none"></div>
+			<div id="foot-bar-word" class="foot-bar-word  foot-nav" style="display:none">
+				<div class="item m-catelog-bar">
+					<div class="item-wrapper">
+						<div class="icon-catelog"></div>
+						<div class="icon-text">
+							目录
+						</div>
+					</div>
+				</div>
+				<div class="item m-font-bar">
+					<div class="item-wrapper">
+						<div class="icon-font"></div>
+						<div class="icon-text">
+							字体
+						</div>
+					</div>
+				</div>
+				<div class="item m-day-change-bar">
+					<div class="item-wrapper">
+						<div class="night-day">
+							<div class="icon-night-day"></div>
+							<div class="icon-text">
+								夜间
+							</div>
+						</div>
+						<div class="light-day" style="display:none">
+							<div class="icon-light-day"></div>
+							<div class="icon-text">
+								白天
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 控制面板 -->
+			<div class="foot-pannel-bk pannel-control" style="display:none"></div>
+			<div class="foot-pannel pannel-control" style="display:none">
+				<div class="child-pannel" id="font-pannel">
+					<span class="font-word">字号</span>
+					<button class="font-change" id="big_font">大</button>
+					<button class="font-change" id="small_font">小</button>
+				</div>
+				<div class="child-pannel color-pannel">
+					<span class="color-change">颜色</span>
+					<div class="icon-color-bar color1" id="color1">
+						<div class="color1-bk"></div>
+					</div>
+					<div class="icon-color-bar color2" id="color2">
+						<div class="color2-bk"></div>
+					</div>
+					<div class="icon-color-bar color3" id="color3">
+						<div class="color3-bk"></div>
+					</div>
+					<div class="icon-color-bar color4" id="color4">
+						<div class="color4-bk"></div>
+					</div>
+					<div class="icon-color-bar color5" id="color5">
+						<div class="color5-bk"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 文章主题内容 -->
+			<div id="fiction_chapter_title"></div>
+			<div id="fiction_container" class="m-fiction-container">
+				<div id="fiction_word">
+			
+				</div>
+
+				<!-- 上/下页的按钮 -->
+				<div id="change_page" class="m-button-bar">
+					<ul class="u-tab">
+						<li id="prev_page">上一页</li>
+						<li id="next_page">下一页</li>
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+		<script src="lib/zepto.min.js"></script>
+		<script>
+			window.jQuery = $;
+		</script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="js/jquery.jsonp.js"></script>
+		<script src="js/webapp.js"></script>
+		
+	</body>
+</html>
